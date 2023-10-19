@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id = "header"> Hello </h1>
+    <input type = "text"  id = "inpt"/>
+    <!-- <button onclick="red()"> RED </button>
+    <button onclick="green()"> GREEN </button> -->
+    <button onclick="pressed()"> Click Here </button>
+
+    <script type="text/javascript">
+
+    // DISPLAYING OUTPUTS
+
+        // document.write("<h2>Hello</h>");
+        // console.log("Hello this is a log.");
+        // console.warn("This is a warning!");
+        // console.error("This is an error!");
+
+        // document.getElementById("header").innerHTML = "This is BSIT-NS-3A";
+        // document.write(document.getElementById("header").innerHTML);
+        // document.getElementById("inpt").value = "Hello BSIT"
+    
+    // DATA TYPES: Primitive types number, string, boolean, null, undefine | Objects Array, Sets, Maps
+    // VARIABLES: Related or have a meaningful variables
+
+        // var x = 69;
+        // x = 71;
+        // console.log(x);
+
+        // var name = "Madz";
+        // console.log(name);
+
+        // var it = 5;
+        // it = name;
+        // console.log(it);
+
+    // OPERATORS
+
+            // var x = 60;
+            // var y = 9;
+            // var z = x + y;
+            // console.log(z);
+            // document.write(z);
+
+            // x += 5; // x = x + 5
+            // console.log(x);
+            
+            // y++;
+            // console.log(y);
+
+            // z++;
+            // console.log(z);
+
+            // var str = "bsit-ns";
+            // var str1 = "3a"
+            // var w = str + " " + y;
+            // console.log(w);
+            // console.log(str + " " + str1);
+
+            // var strng = "hello" - 5
+            // console.log(strng);
+
+            // ORDER OF OPERATIONS BEDMAS
+            //  B brackets
+            //  E exponents
+            //  D division
+            //  M multiplication
+            //  A addition
+            //  S subtraction
+
+            // var result = (4 * 6) / 5 + 9 - 7;
+            // console.log(result)
+
+    // BOOLEANS
+            
+            // var x = 6;
+            // var y = 9;
+            // var b = x < y;
+            // console.log(b);
+
+            // var q = 6;
+            // var w = "6";
+
+            // var e = q == w; // Compare the value and ignore the type.
+            // console.log(e);
+
+            // var e = q === w;
+            // console.log(e); // compares the value and type.
+
+            // var i = q !== w;
+            // console.log(i);
+
+            // var name = "Madz";
+            // var nickname = "Madz"
+            // console.log(name == nickname)
+
+            // var m = 9;
+            // var n = 6;
+            // console.log(name == nickname && m > n && m != n);
+            // console.log(name == nickname || m < n);
+    
+    // Functions
+
+            // function add(a, b){
+            //     return a + b;
+            // }
+
+            // var x = add(5, 5);
+            // console.log(x);
+            // console.log(add(200, 69));
+
+            // Function for red and green buttons
+
+            // function red(){
+            //     console.log("red");
+            //     document.getElementById("header").innerHTML = "Red";
+            //     document.getElementById("header").style.color = "white";
+            //     document.body.style.backgroundColor = "red";
+            // }
+
+            // function green(){
+            //     console.log("green");
+            //     document.getElementById("header").innerHTML = "Green";
+            //     document.getElementById("header").style.color = "white";
+            //     document.body.style.backgroundColor = "green";
+            // }
+
+    // IF, ELSE IF, ELSE
+
+                // function pressed(){
+                //         var text = document.getElementById("inpt").value;
+                //         if(text === "red"){
+                //             document.getElementById("header").style.color = "red";
+                //         }else if(text === "green"){
+                //             document.getElementById("header").style.color = "green";
+                //         }else if(text === "blue"){
+                //             document.getElementById("header").style.color = "blue";
+                //         }else{
+                //             document.getElementById("header").style.color = "black";
+                //         }
+                //     }
+    
+    // SWITCH
+                    function pressed(){
+                        var text = document.getElementById("inpt").value;
+                        switch (text){
+                            case "red": document.getElementById("header").style.color = "red";
+                            break;
+                            case "blue": document.getElementById("header").style.color = "blue";
+                            break;
+                            case "green": document.getElementById("header").style.color = "green";
+                            break;
+                            default: document.getElementById("header").style.color = "black";
+                            break;
+                        }
+                    }
+    </script>
+    
+</body>
+</html>

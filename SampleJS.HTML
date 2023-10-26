@@ -126,7 +126,7 @@
             //     document.body.style.backgroundColor = "green";
             // }
 
-    // IF, ELSE IF, ELSE
+        // IF, ELSE IF, ELSE
 
             // function pressed(){
             //     var text = document.getElementById("inpt").value;
@@ -166,6 +166,206 @@
             //             break;
             //      }
             // }
+        
+            // function pressed(){
+            //     var text = parseInt(document.getElementById("inpt").value);
+            //     var output = document.getElementById("output");
+
+            //     if(text >= 18){
+            //         output.innerHTML = " You are Qualified to vote."
+            //     }
+            //     else if(text < 18){
+            //         output.innerHTML = " You are not Qualified to vote."
+            //     }
+            //     else {
+            //         output.innerHTML = "Please input a valid number!"
+            //     }
+            // }
+    
+    // STRING METHODS AND MANIPULATION
+
+            // function pressed(){
+            //     var text = document.getElementById("inpt").value;
+            //     output.innerHTML = text.toUpperCase(); // change this toLowerCase method
+            //     output.innerHTML = text.endsWith("@");
+            //     output.innerHTML = text.trim();
+            //     console.log(text.length);
+            //     output.innerHTML = "You typed: " + text.trim();
+            // }
+    
+    // ARRAYS
+
+        // var arry = ["Madz", 9, 6, "hello"];
+        // console.log(arry);
+        // console.log(arry.length);
+        // arry[2] = "Bal";
+        // console.log(arry[0]);
+
+        //Remove an element
+
+        // console.log(arry.pop());
+        // console.log(arry);
+        // arry.push("BSIT");
+        // console.log(arry);
+
+        // arry.shift();
+        // console.log(arry);
+
+        // arry.sort();
+        // console.log(arry);
+    
+        // var i = 0;
+        // while (i < 10) {
+        //     console.log(i)
+        //     i++
+        //     if( i == 5){
+        //         break
+        //     }
+        // }
+        // console.log("Break");
+
+    // LOOP Thru ARRAY
+        // var arr  = ["Bal", "Mel", "Gas"];
+        // var i = 0;
+        // while(i < arr.length){
+        //     console.log(arr[i]);
+        //     i++
+        // }
+
+        // var arry = [];
+        // var x = 0;
+        // while(x <= 100){
+        //     arry.push(x);
+        //     x++;
+        // }
+        // console.log(arry);
+
+        // function findInArray(arr, value){
+        //     for(var i = 1; i < 10; i++){
+        //         if(arr[i] == value){
+        //             return true;
+        //         }
+        //     }
+        //     return false;
+        // }
+
+        // var arr = [1,2,3,4,5,"Madz", true];
+        // console.log(findInArray(arr, "Madz"));
+
+        // function squared(n){
+        //     for(var i = 0; i < n; i++){
+        //         for(var j = 0 ; j < n; j++){
+        //             console.log("This runs");
+        //         }
+        //     }
+        // }
+
+        // squared(5)
+
+        // STRINGS ARE ITERABLE
+        // var x = "Hello BSIT"
+        // for(var i = 0; i < x.length; i++){
+        //     console.log(x[i]);
+        // }
+
+        // var arr  = ["Bal", "Mel", "Gas"];
+
+        // console.log(arr);
+        // for(let element of arr){
+        //     console.log(element);
+        //     element = 5;
+        //     console.log(element);
+        // }
+
+
+    //SET is a collection of unique values. Each value can only occur once in a Set.
+
+            // var _set = new Set()
+            // _set.add(8).add(6).add(4).add(7).add(8)
+            // console.log(_set);
+            // console.log(_set.has(6))
+            // console.log(_set.size)
+            // console.log(_set.delete(8))
+            // console.log(_set)
+            // console.log(_set.values())
+            // for(var entry of _set.values()){
+            //     console.log(entry)
+            // }
+
+    // CONVERT ARRAY TO SET
+
+        // var set1 = new Set([1,2,3,7,9,4,5,8,8,8,8,3,3,4])
+        // console.log(set1)
+        // var set2 = new Set("Hello")
+        // console.log(set2)
+
+        // function test(x){
+        //     console.log(x)
+        // }
+
+        // var set1 = new Set("Hello BSIT")
+        // set1.forEach(test)
+
+        // function test(x){
+        //     if(x == "T"){
+        //         console.log("Found " + x)
+        //     }
+        //     else{
+        //         console.log("None")
+        //     }
+        // }
+
+            // var mp = new Map([["s", 6], [3, "hello"]])
+            // console.log(mp.get("s"))
+            // mp.set(3, "hi")
+            // console.log(mp.get(3))
+            // mp.set("x", 9)
+            // console.log(mp.get("x"))
+            // console.log(mp.size)
+            // mp.delete("3")
+            // console.log(mp)
+            // console.log(mp.get("k"))
+
+            // console.log(mp.has("s"))
+            // // mp.clear();
+            // // console.log(mp)
+
+            // console.log(mp.entries())
+
+            // for(var entry of mp){
+            //     console.log(entry)
+            // }
+
+            // for(var entry of mp){
+            //     console.log(entry[0]) // return Keys of the map
+            // }
+
+            // for(var entry of mp){
+            //     console.log(entry[1]) // return the values
+            // }
+        
+        // COUNT THE NUMBER OF CHARACTERS IN A STRING
+
+            var mp = new Map()
+            str = "Hello this is BSIT-NS 3A learning javascript"
+            for(var letter of str){ // loop thru the "str"
+                if(mp.has(letter)){ //check if does have the letter
+                    mp.set(letter, mp.get(letter)+1) // convert the letters into keys and the value of the iteration will be plus 1. 
+                }
+                else {
+                    mp.set(letter, 1)
+                }
+            }
+            console.log(mp)
+
+
+
+
+
+
+            
+
+        
 
 </script>
     
